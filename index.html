@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>縁結びの神社で本気の恋が始まる日 - 江島神社秋の婚活イベント</title>
+  <meta name="description" content="江島神社で開催される特別な婚活イベント。IBJ加盟相談所主催で安心。紅葉美しい秋の神社で、運命の出会いを見つけませんか？" />
+
+  <!-- 修正ポイント: FOUC防止のため defer を外す -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body{font-family:'Noto Sans JP',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif}
+    .serif{font-family:'Noto Serif JP',serif}
+    .hero-bg{
+      background:
+        linear-gradient(135deg,rgba(220,38,127,.7),rgba(255,138,101,.6),rgba(255,165,0,.5)),
+        url('https://cdn.zekkei-japan.jp/images/spots/2a91b929c7532ebe30f2afaf458d704a.jpg');
+      background-size:cover;background-position:center;background-attachment:fixed;
+      will-change: transform; /* 修正ポイント: 初回描画の安定化 */
+    }
+    .autumn-mystical-overlay{background:radial-gradient(ellipse at center,rgba(255,215,0,.05) 0%,rgba(255,165,0,.1) 40%,rgba(220,38,127,.15) 100%)}
+    .trust-bg{
+      background:
+        linear-gradient(rgba(255,255,255,.95),rgba(255,255,255,.95)),
+        url('https://www.club-t.com/ct/kanko/guide/kokunai/info/k_200/k_200_000.jpg');
+      background-size:cover;background-position:center
+    }
+    .footer-bg{
+      background:
+        linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),
+        url('https://view.japan-web-magazine.com/wp-content/uploads/2022/08/miyajima-itsukushima-jinja-hiroshima-japan.jpg');
+      background-size:cover;background-position:center
+    }
+    .card-hover{transition:transform .3s ease,box-shadow .3s ease}
+    .card-hover:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.1)}
+    .pulse-animation{animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+    .floating-hearts{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+    .heart,.autumn-leaf{position:absolute;animation:float 6s infinite}
+    .heart{color:rgba(255,255,255,.3)}.autumn-leaf{color:rgba(255,165,0,.4)}
+    @keyframes float{0%{transform:translateY(100vh) rotate(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-100px) rotate(360deg);opacity:0}}
+
+    .tap-target{min-width:44px;min-height:44px}
+    .min14{font-size:14px}
+    .fixed-cta-blur{backdrop-filter:saturate(180%) blur(10px)}
+    .animate-fadeInUp{animation:fadeInUp .8s ease-out forwards}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    .star{color:#F59E0B}
+
+    /* 修正ポイント: スマホでの初期表示崩れ対策
+       - iOSの background-attachment: fixed バグ回避
+       - 100svhでアドレスバーを考慮した高さに
+    */
+    @media (max-width: 767px){
+      #hero{min-height:100svh;}           /* 安全なビューポート高さ */
+      .hero-bg{background-attachment:scroll;} /* fixedをオフ */
+      h1,h2,h3,.balance{text-wrap:balance}
+      p,li,.pretty,.min14{text-wrap:pretty}
+      p,li{overflow-wrap:anywhere}
+      .sm-only{display:inline}.md-only{display:none}
+    }
+    @media (min-width: 768px){
+      .sm-only{display:none}.md-only{display:inline}
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-pink-50 to-orange-50 text-gray-800">
+
+  <!-- ===== ヒーロー ===== -->
+  <section id="hero" class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 autumn-mystical-overlay" aria-hidden="true"></div>
+
+    <div class="floating-hearts" aria-hidden="true">
+      <i class="fas fa-heart heart text-2xl" style="left:10%;animation-delay:0s"></i>
+      <i class="fas fa-heart heart text-xl" style="left:30%;animation-delay:2s"></i>
+      <i class="fas fa-heart heart text-2xl" style="left:50%;animation-delay:4s"></i>
+      <i class="fas fa-heart heart text-xl" style="left:70%;animation-delay:1s"></i>
+      <i class="fas fa-heart heart text-lg" style="left:90%;animation-delay:3s"></i>
+      <i class="fas fa-maple-leaf autumn-leaf text-2xl" style="left:15%;animation-delay:.5s"></i>
+      <i class="fas fa-leaf autumn-leaf text-xl" style="left:25%;animation-delay:1.5s"></i>
+      <i class="fas fa-maple-leaf autumn-leaf text-lg" style="left:40%;animation-delay:2.5s"></i>
+      <i class="fas fa-leaf autumn-leaf text-2xl" style="left:60%;animation-delay:3.5s"></i>
+      <i class="fas fa-maple-leaf autumn-leaf text-xl" style="left:80%;animation-delay:4.5s"></i>
+    </div>
+
+    <div class="container mx-auto px-6 text-center text-white relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-6">
+          <div class="inline-flex items-center bg-white rounded-full px-6 py-3 shadow-lg">
+            <i class="fas fa-heart text-red-500 mr-2" aria-hidden="true"></i>
+            <span class="text-gray-800 font-bold text-lg">IBJ 正規加盟店</span>
+          </div>
+        </div>
+
+        <!-- 残席わずか（1個に統一済み） -->
+        <div class="mb-2">
+          <span class="inline-block bg-red-600 bg-opacity-80 px-3 py-1 rounded-full text-base md:text-lg">【残席わずか】</span>
+        </div>
+
+        <h1 class="serif text-4xl md:text-6xl font-bold mb-3 leading-tight balance">
+          縁結び神社で<span class="sm-only"><br></span><span class="text-yellow-300">恋が動き出す</span>一日
+        </h1>
+
+        <p class="text-lg md:text-2xl mb-4 leading-relaxed max-w-3xl mx-auto pretty">
+          IBJ加盟相談所の仲人が当日同行。<span class="sm-only"><br></span>
+          本人確認・少人数運営で、はじめてでも安心。
+        </p>
+
+        <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-6 mb-6 max-w-2xl mx-auto border border-orange-300 shadow-lg">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-base md:text-lg">
+            <div class="flex items-center justify-center"><i class="fas fa-calendar-alt mr-2 text-yellow-300" aria-hidden="true"></i><span>2025年10月25日（土）</span></div>
+            <div class="flex items-center justify-center"><i class="fas fa-clock mr-2 text-yellow-300" aria-hidden="true"></i><span>14:00〜17:00</span></div>
+            <div class="flex items-center justify-center"><i class="fas fa-hourglass-half mr-2 text-yellow-300" aria-hidden="true"></i><span>申込期限：<span id="deadlineText">10/18（土）</span></span></div>
+            <div class="flex items-center justify-center md:col-span-3">
+              <i class="fas fa-users mr-2 text-yellow-300" aria-hidden="true"></i>
+              <span>定員20名（最少10名）<span class="sm-only"><br></span><strong id="remainText">残席あと6名</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA（スマホで改行） -->
+        <button id="heroLineBtn"
+                class="tap-target bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold rounded-full py-5 px-12 text-xl transform hover:scale-105 pulse-animation border-4 border-yellow-300"
+                aria-label="LINEで予約（1分で完了）">
+          <i class="fab fa-line mr-3 text-2xl" aria-hidden="true"></i>LINEで今すぐ予約<span class="sm-only"><br></span>（1分完了）
+        </button>
+
+        <div class="text-sm text-yellow-200 leading-relaxed min14 mt-3 pretty">
+          <span class="inline-flex items-center mr-3"><i class="fas fa-shield-alt mr-1" aria-hidden="true"></i>安心：IBJ仲人サポート</span>
+          <span class="inline-flex items-center mr-3"><i class="fas fa-bolt mr-1" aria-hidden="true"></i>簡単：入力不要・LINEで完了</span>
+          <span class="inline-flex items-center"><i class="fas fa-undo mr-1" aria-hidden="true"></i>キャンセル可：3日前まで全額返金</span>
+        </div>
+        <p class="text-xs text-yellow-100 min14 pretty"><i class="fas fa-gift mr-1" aria-hidden="true"></i>初回参加限定：デジタルギフト1,000円進呈</p>
+      </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce" aria-hidden="true">
+      <i class="fas fa-chevron-down text-2xl"></i>
+    </div>
+  </section>
+
+  <!-- 共感セクション（既存） -->
+  <section id="empathy" class="py-20 relative overflow-hidden"
+    style="background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)),url('https://lovegreen.net/wp-content/uploads/2016/11/DSC_0825.jpg');background-size:cover;background-position:center">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="serif text-3xl md:text-4xl font-bold text-gray-900 mb-12 balance"><i class="fas fa-heart-broken text-red-500 mr-3" aria-hidden="true"></i>こんなお悩みありませんか？</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+            <img src="https://www.ibjapan.jp/match-lab/wp-content/uploads/2025/05/31902969_s.jpg"
+                 srcset="https://www.ibjapan.jp/match-lab/wp-content/uploads/2025/05/31902969_s.webp 1x, https://www.ibjapan.jp/match-lab/wp-content/uploads/2025/05/31902969_s.jpg 2x"
+                 alt="マッチングアプリに疲れた様子のイメージ"
+                 loading="lazy" decoding="async" width="640" height="270"
+                 class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-4 text-gray-900 balance">マッチングアプリに疲れた</h3>
+              <p class="text-gray-700 leading-relaxed min14 pretty">写真と実際が違ったり、メッセージが続かない。もっと自然な出会いがほしい...</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+            <img src="https://www.housecom.jp/kurashiate/images/2022/11/e31169e0cfe24f92d4932509affa373d.jpg"
+                 srcset="https://www.housecom.jp/kurashiate/images/2022/11/e31169e0cfe24f92d4932509affa373d.webp 1x, https://www.housecom.jp/kurashiate/images/2022/11/e31169e0cfe24f92d4932509affa373d.jpg 2x"
+                 alt="休日に一人で過ごすイメージ"
+                 loading="lazy" decoding="async" width="640" height="270"
+                 class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-4 text-gray-900 balance">休日、誰とも話さない</h3>
+              <p class="text-gray-700 leading-relaxed min14 pretty">気づけば1日誰とも会話していない。このままでは出会いなんて...</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+            <img src="https://pia-machicon.piary.jp/html/template/default/assets/img/articles/14/cont_07.webp"
+                 srcset="https://pia-machicon.piary.jp/html/template/default/assets/img/articles/14/cont_07.webp 1x, https://pia-machicon.piary.jp/html/template/default/assets/img/articles/14/cont_07.webp 2x"
+                 alt="会話が続かず困るイメージ"
+                 loading="lazy" decoding="async" width="640" height="270"
+                 class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-4 text-gray-900 balance">街コンで会話が続かない</h3>
+              <p class="text-gray-700 leading-relaxed min14 pretty">初対面で何を話せばいいのか分からず、気まずい沈黙が...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-orange-100 to-red-100 rounded-2xl p-8">
+          <h3 class="serif text-2xl font-bold text-gray-900 mb-3 balance">そんなあなたに朗報です！</h3>
+          <p class="text-lg text-gray-800 leading-relaxed pretty">江島神社の神聖な空間で、自然体のあなたと出会える特別なイベントをご用意しました。修学旅行のように楽しみながら、気づけば素敵な人と仲良くなれる仕掛けがたくさん！</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特徴 -->
+  <section id="features" class="py-20 bg-gradient-to-br from-pink-50 to-orange-50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="serif text-3xl md:text-4xl font-bold text-gray-900 mb-6 balance"><i class="fas fa-torii-gate text-red-600 mr-3" aria-hidden="true"></i>なぜ江島神社での婚活なのか？</h2>
+          <p class="text-xl text-gray-700 max-w-3xl mx-auto pretty">修学旅行のように自然に仲良くなれる、特別な婚活体験</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center">
+            <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-pray text-3xl text-red-600" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-lg mb-3 text-gray-900 balance">神社参拝で自然に親近感</h3>
+            <p class="text-gray-700 text-sm min14 leading-relaxed pretty">一緒にお参りすることで、共通の体験が生まれ自然と距離が縮まります</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center">
+            <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-puzzle-piece text-3xl text-orange-600" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-lg mb-3 text-gray-900 balance">クイズ＆ミッションで会話が弾む</h3>
+            <p class="text-gray-700 text-sm min14 leading-relaxed pretty">江島神社にまつわるクイズやミッションで、自然と会話のきっかけが生まれます</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center">
+            <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-user-tie text-3xl text-yellow-600" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-lg mb-3 text-gray-900 balance">仲人同行で安心フォロー</h3>
+            <p class="text-gray-700 text-sm min14 leading-relaxed pretty">IBJ経験豊富な仲人がそっとサポート。人見知りの方も安心です</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center">
+            <!-- 修正ポイント: ピンク丸に“紅葉”のインラインSVGを追加（無地アイコン問題の解消） -->
+            <div class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6" role="img" aria-label="紅葉アイコン">
+              <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="false">
+                <path d="M32 6l4 10 10-4-4 10 10 4-10 4 4 10-10-4-4 10-4-10-10 4 4-10-10-4 10-4-4-10 10 4 4-10z" fill="#DB2777"/>
+                <path d="M32 6v52" stroke="#9D174D" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-3 text-gray-900 balance">秋の美しい季節感</h3>
+            <p class="text-gray-700 text-sm min14 leading-relaxed pretty">紅葉に包まれた神聖な空間で、ロマンチックなひとときを過ごせます</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-16">
+          <div class="bg-gradient-to-r from-red-500 to-orange-500 text-white rounded-2xl p-8 max-w-2xl mx-auto">
+            <h3 class="serif text-2xl font-bold mb-4 balance">「修学旅行のように自然に仲良くなれる」</h3>
+            <p class="text-lg pretty">堅苦しいお見合いではなく、楽しい思い出作りの中で<br />気づけば素敵な人と繋がっている。そんな体験をお約束します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- イベント概要 -->
+  <section id="event-details" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="serif text-3xl md:text-4xl font-bold text-gray-900 mb-6 balance"><i class="fas fa-info-circle text-blue-600 mr-3" aria-hidden="true"></i>イベント概要</h2>
+        </div>
+
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 shadow-lg">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-calendar text-blue-600" aria-hidden="true"></i></div>
+                <div><h4 class="font-bold text-gray-900 balance">開催日時</h4><p class="text-gray-700 min14 pretty">2025年10月25日（土）14:00〜17:00</p></div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-map-marker-alt text-blue-600" aria-hidden="true"></i></div>
+                <div><h4 class="font-bold text-gray-900 balance">会場</h4><p class="text-gray-700 min14 pretty">江島神社（神奈川県藤沢市）</p></div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-users text-blue-600" aria-hidden="true"></i></div>
+                <div><h4 class="font-bold text-gray-900 balance">定員・対象</h4><p class="text-gray-700 min14 pretty">20名（男女各10名）/ 26〜39歳</p></div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-yen-sign text-blue-600" aria-hidden="true"></i></div>
+                <div><h4 class="font-bold text-gray-900 balance">参加費用</h4><p class="text-gray-700 min14 pretty">男性 8,000円 / 女性 6,000円</p></div>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-utensils text-green-600" aria-hidden="true"></i></div>
+                <div><h4 class="font-bold text-gray-900 balance">お食事</h4><p class="text-gray-700 min14 pretty">江ノ島グルメ（食事代込み）</p></div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-shield-alt text-green-600" aria-hidden="true"></i></div>
+                <div><h4 class="font-bold text-gray-900 balance">安心・安全</h4><p class="text-gray-700 min14 pretty">本人確認あり・IBJ仲人同行</p></div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-gift text-green-600" aria-hidden="true"></i></div>
+                <div><h4 class="font-bold text-gray-900 balance">特典</h4><p class="text-gray-700 min14 pretty">初回参加でデジタルギフト券1,000円</p></div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-building text-green-600" aria-hidden="true"></i></div>
+                <div><h4 class="font-bold text-gray-900 balance">主催</h4><p class="text-gray-700 min14 pretty">IBJ加盟相談所 Encore</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 bg-white rounded-2xl p-4 text-sm text-gray-800 min14 pretty">
+            <p><i class="fab fa-line text-green-500 mr-1" aria-hidden="true"></i><strong>1分で完了：</strong>ボタン→LINE追加→「参加希望」と送るだけ。入力不要。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 当日の流れ -->
+  <section id="timeline" class="py-20 bg-gradient-to-br from-orange-50 to-red-50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="serif text-3xl md:text-4xl font-bold text-gray-900 mb-6 balance"><i class="fas fa-route text-orange-600 mr-3" aria-hidden="true"></i>当日の流れ</h2>
+          <p class="text-xl text-gray-700 pretty">楽しい思い出と素敵な出会いが待っています</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="relative">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+              <img src="https://shonanjin.com/wp-content/uploads/2024/10/3-1.jpg"
+                   srcset="https://shonanjin.com/wp-content/uploads/2024/10/3-1.webp 1x, https://shonanjin.com/wp-content/uploads/2024/10/3-1.jpg 2x"
+                   alt="江島神社の参拝ウォーク" loading="lazy" decoding="async" width="800" height="320"
+                   class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <h3 class="font-bold text-xl mb-2 text-gray-900 balance">14:00〜15:00</h3>
+                <h4 class="font-bold text-lg mb-3 text-gray-900 balance">神社集合＆参拝ウォーク</h4>
+                <p class="text-gray-700 leading-relaxed min14 pretty">挨拶→参拝→境内散策。同じ体験で自然に会話が生まれます。</p>
+              </div>
+            </div>
+            <div class="hidden md:block absolute top-1/2 -right-4 -translate-y-1/2 z-10" aria-hidden="true"><i class="fas fa-arrow-right text-3xl text-orange-400"></i></div>
+          </div>
+
+          <div class="relative">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+              <img src="https://enmusubisai-aichi.com/wp-content/themes/enmusubi/img/home/charm01.jpg"
+                   srcset="https://enmusubisai-aichi.com/wp-content/themes/enmusubi/img/home/charm01.webp 1x, https://enmusubisai-aichi.com/wp-content/themes/enmusubi/img/home/charm01.jpg 2x"
+                   alt="縁結びクイズ＆神社ミッション" loading="lazy" decoding="async" width="800" height="320"
+                   class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <h3 class="font-bold text-xl mb-2 text-gray-900 balance">15:00〜16:00</h3>
+                <h4 class="font-bold text-lg mb-3 text-gray-900 balance">縁結びクイズ＆神社ミッション</h4>
+                <p class="text-gray-700 leading-relaxed min14 pretty">チームで挑戦。会話のきっかけが途切れません。</p>
+              </div>
+            </div>
+            <div class="hidden md:block absolute top-1/2 -right-4 -translate-y-1/2 z-10" aria-hidden="true"><i class="fas fa-arrow-right text-3xl text-orange-400"></i></div>
+          </div>
+
+          <div class="relative">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+              <img src="https://happymail.co.jp/happylife/wp-content/uploads/2020/03/image4-11.jpg"
+                   srcset="https://happymail.co.jp/happylife/wp-content/uploads/2020/03/image4-11.webp 1x, https://happymail.co.jp/happylife/wp-content/uploads/2020/03/image4-11.jpg 2x"
+                   alt="お食事・カジュアルトーク" loading="lazy" decoding="async" width="800" height="320"
+                   class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <h3 class="font-bold text-xl mb-2 text-gray-900 balance">16:00〜17:00</h3>
+                <h4 class="font-bold text-lg mb-3 text-gray-900 balance">お食事・カジュアルトーク</h4>
+                <p class="text-gray-700 leading-relaxed min14 pretty">江ノ島グルメを囲んで、リラックス交流＆連絡先交換へ。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <div class="bg-white rounded-2xl p-8 shadow-lg max-w-2xl mx-auto">
+            <h3 class="serif text-2xl font-bold text-gray-900 mb-4 balance"><i class="fas fa-heart text-red-500 mr-2" aria-hidden="true"></i>特別な一日の思い出</h3>
+            <p class="text-gray-700 leading-relaxed min14 pretty">神社×秋景色×少人数。3時間で自然体のご縁づくり。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 参加者の声 -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="serif text-3xl md:text-4xl font-bold text-gray-900 balance">参加者の声</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- カード5件（内容は既存のまま） -->
+          <article class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center mr-3" aria-hidden="true">
+                <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="男性アバター">
+                  <circle cx="32" cy="24" r="12" fill="#FDE68A"></circle>
+                  <rect x="16" y="36" width="32" height="20" rx="10" fill="#FCA5A5"></rect>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-gray-900">Aさん（32）</p>
+                <p class="text-sm text-gray-500 min14"><span class="star">★★★★☆</span>（4.5）</p>
+              </div>
+            </div>
+            <p class="text-gray-800 leading-relaxed min14 pretty">真剣な方が多く、仲人さんが会話を助けてくれて安心でした。堅苦しさがなく、自然に話せたのが良かったです。</p>
+          </article>
+
+          <article class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mr-3" aria-hidden="true">
+                <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="女性アバター">
+                  <circle cx="32" cy="24" r="12" fill="#FBCFE8"></circle>
+                  <rect x="16" y="36" width="32" height="20" rx="10" fill="#FCA5A5"></rect>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-gray-900">Bさん（28）</p>
+                <p class="text-sm text-gray-500 min14"><span class="star">★★★★☆</span>（4.5）</p>
+              </div>
+            </div>
+            <p class="text-gray-800 leading-relaxed min14 pretty">神社散策で自然に距離が縮みました。アプリより話しやすく、初対面でも笑って過ごせました。</p>
+          </article>
+
+          <article class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center mr-3" aria-hidden="true">
+                <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="中性アバター">
+                  <circle cx="32" cy="24" r="12" fill="#BFDBFE"></circle>
+                  <rect x="16" y="36" width="32" height="20" rx="10" fill="#A7F3D0"></rect>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-gray-900">Cさん（35）</p>
+                <p class="text-sm text-gray-500 min14"><span class="star">★★★★★</span>（4.8）</p>
+              </div>
+            </div>
+            <p class="text-gray-800 leading-relaxed min14 pretty">1分のLINE予約が気楽。キャンセル可で初参加でもハードルが低く、運営も丁寧で安心できました。</p>
+          </article>
+
+          <article class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-3" aria-hidden="true">
+                <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="男性アバター">
+                  <circle cx="32" cy="24" r="12" fill="#93C5FD"></circle>
+                  <rect x="16" y="36" width="32" height="20" rx="10" fill="#FDBA74"></rect>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-gray-900">Dさん（38）</p>
+                <p class="text-sm text-gray-500 min14"><span class="star">★★★★☆</span>（4.4）</p>
+              </div>
+            </div>
+            <p class="text-gray-800 leading-relaxed min14 pretty">同年代中心で話題が合い、連絡先交換までスムーズ。景色も良くリフレッシュできました。</p>
+          </article>
+
+          <article class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center mr-3" aria-hidden="true">
+                <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="女性アバター">
+                  <circle cx="32" cy="24" r="12" fill="#FDE2E2"></circle>
+                  <rect x="16" y="36" width="32" height="20" rx="10" fill="#FECACA"></rect>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-gray-900">Eさん（33）</p>
+                <p class="text-sm text-gray-500 min14"><span class="star">★★★★★</span>（4.7）</p>
+              </div>
+            </div>
+            <p class="text-gray-800 leading-relaxed min14 pretty">スタッフの誘導が上手で、話すのが苦手でも楽しめました。次回も参加したいです。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 安心 -->
+  <section id="trust" class="py-20 trust-bg">
+    <div class="container mx-auto px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="serif text-3xl md:text-4xl font-bold text-gray-900 mb-4 balance"><i class="fas fa-shield-alt text-blue-600 mr-3" aria-hidden="true"></i>安心してご参加いただけます</h2>
+          <p class="text-lg text-gray-700 pretty">IBJ加盟相談所の実績と仕組みで、出会いを安全に。</p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-2xl p-8 mb-10">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div><div class="text-4xl md:text-5xl font-bold text-blue-600 mb-1">8.6万人</div><p class="min14 text-gray-700 pretty">会員数</p></div>
+            <div><div class="text-4xl md:text-5xl font-bold text-red-600 mb-1">1万組</div><p class="min14 text-gray-700 pretty">年間成婚</p></div>
+            <div><div class="text-4xl md:text-5xl font-bold text-green-600 mb-1">4,000店</div><p class="min14 text-gray-700 pretty">加盟店</p></div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-id-card text-blue-600" aria-hidden="true"></i></div>
+              <p class="min14 text-gray-800 pretty"><span class="font-bold">本人確認済みのみ。</span>身分証でチェックし、安心な場を担保。</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-user-friends text-green-600" aria-hidden="true"></i></div>
+              <p class="min14 text-gray-800 pretty"><span class="font-bold">経験豊富な仲人が同行。</span>会話の橋渡し・連絡先交換まで丁寧に。</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-heart text-purple-600" aria-hidden="true"></i></div>
+              <p class="min14 text-gray-800 pretty"><span class="font-bold">イベント後もフォロー。</span>マッチングから交際の不安まで相談OK。</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-medal text-orange-600" aria-hidden="true"></i></div>
+              <p class="min14 text-gray-800 pretty"><span class="font-bold">ノウハウと実績。</span>短時間でも成果に繋がる設計です。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 主催者プロフィール -->
+  <section id="host" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="serif text-3xl font-bold text-gray-900 text-center mb-10 balance"><i class="fas fa-user-circle text-blue-600 mr-3" aria-hidden="true"></i>主催者プロフィール</h2>
+        <div class="bg-gray-50 rounded-3xl p-8 shadow-lg flex flex-col md:flex-row items-center gap-6">
+          <img src="https://placehold.co/240x240?text=Host"
+               srcset="https://placehold.co/240x240?text=Host.webp 1x, https://placehold.co/480x480?text=Host.webp 2x"
+               alt="主催者の顔写真（ダミー）"
+               loading="lazy" decoding="async" width="240" height="240"
+               class="w-40 h-40 rounded-full object-cover shadow-md" />
+          <div class="text-gray-800">
+            <p class="font-bold text-xl text-gray-900 balance">Encore（IBJ加盟相談所）</p>
+            <p class="mt-2 min14 pretty">仲人2名が同行。会話のきっかけ作りから当日フォローまでサポートします。</p>
+            <ul class="mt-3 text-sm min14">
+              <li class="flex items-center pretty"><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>本人確認の徹底</li>
+              <li class="flex items-center pretty"><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>初参加・お一人参加を優先フォロー</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 会場写真 -->
+  <section id="venue-photos" class="py-16 bg-gradient-to-br from-pink-50 to-orange-50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="serif text-3xl font-bold text-gray-900 text-center mb-10 balance"><i class="fas fa-camera text-red-600 mr-3" aria-hidden="true"></i>会場イメージ</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d1?q=80&w=1200"
+               srcset="https://images.unsplash.com/photo-1545569341-9eb8b30979d1?q=80&w=600 1x, https://images.unsplash.com/photo-1545569341-9eb8b30979d1?q=80&w=1200 2x"
+               alt="江島神社の参道のイメージ" loading="lazy" decoding="async" width="600" height="160"
+               class="w-full h-40 object-cover rounded-xl shadow" />
+          <img src="https://images.unsplash.com/photo-1545569343-8a3b79d9a69a?q=80&w=1200"
+               srcset="https://images.unsplash.com/photo-1545569343-8a3b79d9a69a?q=80&w=600 1x, https://images.unsplash.com/photo-1545569343-8a3b79d9a69a?q=80&w=1200 2x"
+               alt="境内の風景のイメージ" loading="lazy" decoding="async" width="600" height="160"
+               class="w-full h-40 object-cover rounded-xl shadow" />
+          <img src="https://images.unsplash.com/photo-1541542684-4a31f4a1d80b?q=80&w=1200"
+               srcset="https://images.unsplash.com/photo-1541542684-4a31f4a1d80b?q=80&w=600 1x, https://images.unsplash.com/photo-1541542684-4a31f4a1d80b?q=80&w=1200 2x"
+               alt="テーブルセッティングのイメージ" loading="lazy" decoding="async" width="600" height="160"
+               class="w-full h-40 object-cover rounded-xl shadow" />
+          <img src="https://images.unsplash.com/photo-1498656303895-38a6222d42e4?q=80&w=1200"
+               srcset="https://images.unsplash.com/photo-1498656303895-38a6222d42e4?q=80&w=600 1x, https://images.unsplash.com/photo-1498656303895-38a6222d42e4?q=80&w=1200 2x"
+               alt="江ノ島グルメのイメージ" loading="lazy" decoding="async" width="600" height="160"
+               class="w-full h-40 object-cover rounded-xl shadow" />
+        </div>
+        <p class="text-center text-sm text-gray-700 mt-3 min14 pretty">※写真はイメージです。当日の天候・混雑状況により変更の可能性があります。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="serif text-3xl md:text-4xl font-bold text-gray-900 mb-4 balance"><i class="fas fa-question-circle text-purple-600 mr-3" aria-hidden="true"></i>よくあるご質問</h2>
+          <p class="text-gray-700 min14 pretty">気になるポイントだけ開いて読めます。</p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="p-6 cursor-pointer faq-toggle">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-lg text-gray-900 balance"><i class="fas fa-user text-blue-500 mr-3" aria-hidden="true"></i>1人参加でも大丈夫ですか？</h4>
+                <i class="fas fa-chevron-down text-gray-400" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="px-6 pb-6 text-gray-800 min14 pretty">問題ありません。<span class="font-bold">お一人参加が多数</span>。仲人が会話に自然に誘導します。</div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="p-6 cursor-pointer faq-toggle">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-lg text-gray-900 balance"><i class="fas fa-heart text-red-500 mr-3" aria-hidden="true"></i>初めてでも安心ですか？</h4>
+                <i class="fas fa-chevron-down text-gray-400" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="px-6 pb-6 text-gray-800 min14 pretty">堅苦しい進行はしません。<span class="font-bold">観光しながら交流</span>できる内容です。</div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="p-6 cursor-pointer faq-toggle">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-lg text-gray-900 balance"><i class="fas fa-cloud-rain text-blue-500 mr-3" aria-hidden="true"></i>雨天の場合は？</h4>
+                <i class="fas fa-chevron-down text-gray-400" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="px-6 pb-6 text-gray-800 min14 pretty">小雨決行。屋内スペースへ切替え可能。荒天時は事前連絡します。</div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="p-6 cursor-pointer faq-toggle">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-lg text-gray-900 balance"><i class="fas fa-mobile-alt text-green-500 mr-3" aria-hidden="true"></i>連絡先交換は？</h4>
+                <i class="fas fa-chevron-down text-gray-400" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="px-6 pb-6 text-gray-800 min14 pretty">双方の希望があれば、<span class="font-bold">仲人立会いで安心</span>して交換いただけます。</div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="p-6 cursor-pointer faq-toggle">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-lg text-gray-900 balance"><i class="fas fa-calendar-times text-orange-500 mr-3" aria-hidden="true"></i>キャンセルは可能？</h4>
+                <i class="fas fa-chevron-down text-gray-400" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="px-6 pb-6 text-gray-800 min14 pretty">開催3日前まで全額返金。それ以降は準備費のため一部ご負担をお願いします。</div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="p-6 cursor-pointer faq-toggle">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-lg text-gray-900 balance"><i class="fas fa-file-contract text-indigo-500 mr-3" aria-hidden="true"></i>キャンセル規定の詳細</h4>
+                <i class="fas fa-chevron-down text-gray-400" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="px-6 pb-6 text-gray-800 min14 pretty">
+              7〜4日前:50% / 3日前〜当日:100%（食材・座席確保のため）。<br />やむを得ない事情はご相談ください。代理参加は事前連絡で可。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer-bg text-white relative overflow-hidden">
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="floating-hearts">
+        <i class="fas fa-heart heart text-xl" style="left:15%;animation-delay:0s"></i>
+        <i class="fas fa-heart heart text-lg" style="left:35%;animation-delay:2s"></i>
+        <i class="fas fa-heart heart text-xl" style="left:55%;animation-delay:4s"></i>
+        <i class="fas fa-heart heart text-lg" style="left:75%;animation-delay:1s"></i>
+      </div>
+    </div>
+
+    <div class="relative z-10 py-20">
+      <div class="container mx-auto px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl md:text-4xl font-bold mb-6 balance">イベント後も、IBJ加盟相談所があなたの出会いを応援します</h2>
+          <p class="text-xl mb-12 leading-relaxed max-w-3xl mx-auto pretty">江島神社での素敵な出会いは、あなたの人生を変える第一歩。<br />真剣な恋愛から結婚まで、私たちが責任を持ってサポートします。</p>
+
+          <!-- 修正ポイント: CTAもスマホで改行 -->
+          <button id="footerLineBtn"
+                  class="tap-target bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold rounded-full py-8 px-16 text-2xl transform hover:scale-105 pulse-animation"
+                  aria-label="LINEで予約（1分で完了）">
+            <i class="fab fa-line mr-4 text-3xl" aria-hidden="true"></i>LINEで今すぐ予約<span class="sm-only"><br></span>（1分完了）
+          </button>
+
+          <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto mt-6">
+            <p class="text-lg pretty"><i class="fas fa-gift mr-2 text-yellow-300" aria-hidden="true"></i><strong>初回参加限定特典：</strong>デジタルギフト券1,000円分プレゼント</p>
+            <p class="text-sm mt-2 text-gray-200 min14 pretty">※ イベント当日にお渡しします</p>
+          </div>
+
+          <p class="text-sm text-gray-300 mt-4 min14 pretty">お申し込み・お問い合わせは LINEが便利です。24時間受付中！</p>
+
+          <div class="mt-16 pt-8 border-t border-white border-opacity-20">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 min14">
+              <div class="pretty">
+                <p>主催：IBJ加盟相談所 Encore</p>
+                <p>〒xxx-xxxx 神奈川県xxx市xxx</p>
+              </div>
+              <div class="mt-4 md:mt-0">
+                <div class="flex items-center"><i class="fas fa-heart text-red-400 mr-2" aria-hidden="true"></i><span>IBJ正規加盟店</span></div>
+              </div>
+            </div>
+            <div class="mt-8 text-center text-xs text-gray-300 min14"><p>&copy; 2025 Encore. All rights reserved.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- 常時表示の固定CTAバー（色統一＋LINEアイコンあり） -->
+  <div id="sticky-cta" class="md:hidden fixed bottom-0 inset-x-0 bg-white/90 fixed-cta-blur border-t border-gray-200 z-50">
+    <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="text-sm">
+        <div class="font-bold text-red-600">残席 <span id="remainTextBar">6</span> 名</div>
+        <div class="text-gray-700 min14">締切 <span id="deadlineTextBar">10/18</span> ・ LINEで1分</div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="barLineBtn" class="tap-target bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold rounded-full py-3 px-5 text-base flex items-center gap-2" aria-label="残席わずか。LINEで今すぐ予約">
+          <i class="fab fa-line text-lg" aria-hidden="true"></i><span>今すぐ予約</span>
+        </button>
+        <button id="closeSticky" class="tap-target w-10 h-10 rounded-full border border-gray-300 text-gray-500 flex items-center justify-center" aria-label="固定バーを閉じる">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- スクリプト -->
+  <script>
+    // スムーススクロール
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const t=document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+
+    // FAQ 初期は閉じる（該当要素がある場合のみ）
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('.px-6.pb-6').forEach(el=>el.style.display='none');
+      document.querySelectorAll('.faq-toggle').forEach(tg=>{
+        tg.addEventListener('click',()=>{
+          const ans=tg.parentElement.querySelector('.px-6.pb-6');
+          const icon=tg.querySelector('.fa-chevron-down');
+          const show=(ans.style.display==='none'||ans.style.display==='');
+          ans.style.display=show?'block':'none';
+          if(icon) icon.style.transform=show?'rotate(180deg)':'rotate(0deg)';
+        });
+      });
+    });
+
+    // CTA
+    const openLine=()=>{ /* 実装時にLINEのURLを設定 */ alert('LINE申込URLは実装時に設定してください'); };
+    ['heroLineBtn','footerLineBtn','barLineBtn'].forEach(id=>{
+      const el=document.getElementById(id); if(el) el.addEventListener('click',openLine);
+    });
+
+    // スクロールでのフェードイン
+    const observer=new IntersectionObserver(es=>{
+      es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('animate-fadeInUp'); });
+    },{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+    document.querySelectorAll('.card-hover, .bg-white').forEach(el=>observer.observe(el));
+
+    // 残席/締切表示
+    const REMAIN=6;
+    const DEADLINE='10/18（土）';
+    const DEADLINE_SHORT='10/18';
+    const rt=document.getElementById('remainText'); if(rt) rt.textContent=`残席あと${REMAIN}名`;
+    const rtb=document.getElementById('remainTextBar'); if(rtb) rtb.textContent=REMAIN;
+    const dl=document.getElementById('deadlineText'); if(dl) dl.textContent=DEADLINE;
+    const dlb=document.getElementById('deadlineTextBar'); if(dlb) dlb.textContent=DEADLINE_SHORT;
+  </script>
+</body>
+</html>

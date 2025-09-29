@@ -66,6 +66,9 @@
     @media (min-width: 768px){
       .sm-only{display:none}.md-only{display:inline}
     }
+    /* 修正ポイント: スマホのみ 下スクロール誘導アイコンを確実に中央寄せ（HTMLはそのまま） */
+
+
   </style>
 </head>
 
@@ -113,12 +116,12 @@
 
         <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-6 mb-6 max-w-2xl mx-auto border border-orange-300 shadow-lg">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-base md:text-lg">
-            <div class="flex items-center justify-center"><i class="fas fa-calendar-alt mr-2 text-yellow-300" aria-hidden="true"></i><span>2025年10月25日（土）</span></div>
-            <div class="flex items-center justify-center"><i class="fas fa-clock mr-2 text-yellow-300" aria-hidden="true"></i><span>14:00〜17:00</span></div>
+            <div class="flex items-center justify-center"><i class="fas fa-calendar-alt mr-2 text-yellow-300" aria-hidden="true"></i><span>2025年10月26日（日）</span></div>
+            <div class="flex items-center justify-center"><i class="fas fa-clock mr-2 text-yellow-300" aria-hidden="true"></i><span>14:00〜17:30</span></div>
             <div class="flex items-center justify-center"><i class="fas fa-hourglass-half mr-2 text-yellow-300" aria-hidden="true"></i><span>申込期限：<span id="deadlineText">10/18（土）</span></span></div>
             <div class="flex items-center justify-center md:col-span-3">
               <i class="fas fa-users mr-2 text-yellow-300" aria-hidden="true"></i>
-              <span>定員20名（最少10名）<span class="sm-only"><br></span><strong id="remainText">残席あと6名</strong></span>
+              <span>定員14名（最少10名）<span class="sm-only"><br></span><strong id="remainText">残席あと6名</strong></span>
             </div>
           </div>
         </div>
@@ -256,7 +259,7 @@
             <div class="space-y-6">
               <div class="flex items-center">
                 <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-calendar text-blue-600" aria-hidden="true"></i></div>
-                <div><h4 class="font-bold text-gray-900 balance">開催日時</h4><p class="text-gray-700 min14 pretty">2025年10月25日（土）14:00〜17:00</p></div>
+                <div><h4 class="font-bold text-gray-900 balance">開催日時</h4><p class="text-gray-700 min14 pretty">2025年10月26日（日）14:00〜17:30</p></div>
               </div>
               <div class="flex items-center">
                 <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-map-marker-alt text-blue-600" aria-hidden="true"></i></div>
@@ -264,7 +267,7 @@
               </div>
               <div class="flex items-center">
                 <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-users text-blue-600" aria-hidden="true"></i></div>
-                <div><h4 class="font-bold text-gray-900 balance">定員・対象</h4><p class="text-gray-700 min14 pretty">20名（男女各10名）/ 26〜39歳</p></div>
+                <div><h4 class="font-bold text-gray-900 balance">定員・対象</h4><p class="text-gray-700 min14 pretty">14名（男女各7名）/ 26〜39歳</p></div>
               </div>
               <div class="flex items-center">
                 <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-yen-sign text-blue-600" aria-hidden="true"></i></div>
@@ -274,7 +277,7 @@
             <div class="space-y-6">
               <div class="flex items-center">
                 <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-utensils text-green-600" aria-hidden="true"></i></div>
-                <div><h4 class="font-bold text-gray-900 balance">お食事</h4><p class="text-gray-700 min14 pretty">江ノ島グルメ（食事代込み）</p></div>
+                <div><h4 class="font-bold text-gray-900 balance">お食事</h4><p class="text-gray-700 min14 pretty">With　Sea鵠沼（食事代込み）</p></div>
               </div>
               <div class="flex items-center">
                 <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-shield-alt text-green-600" aria-hidden="true"></i></div>
@@ -286,7 +289,7 @@
               </div>
               <div class="flex items-center">
                 <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-building text-green-600" aria-hidden="true"></i></div>
-                <div><h4 class="font-bold text-gray-900 balance">主催</h4><p class="text-gray-700 min14 pretty">IBJ加盟相談所 Encore</p></div>
+                <div><h4 class="font-bold text-gray-900 balance">主催</h4><p class="text-gray-700 min14 pretty">IBJ加盟相談所 MATCH</p></div>
               </div>
             </div>
           </div>
@@ -506,29 +509,34 @@
     </div>
   </section>
 
-  <!-- 主催者プロフィール -->
-  <section id="host" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="serif text-3xl font-bold text-gray-900 text-center mb-10 balance"><i class="fas fa-user-circle text-blue-600 mr-3" aria-hidden="true"></i>主催者プロフィール</h2>
-        <div class="bg-gray-50 rounded-3xl p-8 shadow-lg flex flex-col md:flex-row items-center gap-6">
-          <img src="https://placehold.co/240x240?text=Host"
-               srcset="https://placehold.co/240x240?text=Host.webp 1x, https://placehold.co/480x480?text=Host.webp 2x"
-               alt="主催者の顔写真（ダミー）"
-               loading="lazy" decoding="async" width="240" height="240"
-               class="w-40 h-40 rounded-full object-cover shadow-md" />
-          <div class="text-gray-800">
-            <p class="font-bold text-xl text-gray-900 balance">Encore（IBJ加盟相談所）</p>
-            <p class="mt-2 min14 pretty">仲人2名が同行。会話のきっかけ作りから当日フォローまでサポートします。</p>
-            <ul class="mt-3 text-sm min14">
-              <li class="flex items-center pretty"><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>本人確認の徹底</li>
-              <li class="flex items-center pretty"><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>初参加・お一人参加を優先フォロー</li>
-            </ul>
-          </div>
+<!-- 主催者プロフィール -->
+<section id="host" class="py-16 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="serif text-3xl font-bold text-gray-900 text-center mb-10 balance">
+        <i class="fas fa-user-circle text-blue-600 mr-3" aria-hidden="true"></i>主催者プロフィール
+      </h2>
+      <div class="bg-gray-50 rounded-3xl p-8 shadow-lg flex flex-col md:flex-row items-center gap-6">
+        <img src="images/sub-counselor.png" alt="仲人プロフィール" loading="lazy" decoding="async" width="400" height="400" class="rounded-lg">
+        
+        <div class="text-gray-800">
+          <p class="font-bold text-xl text-gray-900 balance">MATCH（IBJ加盟相談所）</p>
+          <p class="mt-2 min14 pretty">仲人複数名が同行。会話のきっかけ作りから当日フォローまでサポートします。</p>
+          <ul class="mt-3 text-sm min14">
+            <li class="flex items-center pretty"><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>本人確認の徹底</li>
+            <li class="flex items-center pretty"><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>初参加・お一人参加を優先フォロー</li>
+          </ul>
+
+          <!-- 修正ポイント: 公式サイトリンク追加 -->
+          <a href="https://match-konkatsu.com/" target="_blank" rel="noopener noreferrer"
+             class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-full transition">
+            公式サイトはこちら
+          </a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- 会場写真 -->
   <section id="venue-photos" class="py-16 bg-gradient-to-br from-pink-50 to-orange-50">
@@ -536,22 +544,10 @@
       <div class="max-w-6xl mx-auto">
         <h2 class="serif text-3xl font-bold text-gray-900 text-center mb-10 balance"><i class="fas fa-camera text-red-600 mr-3" aria-hidden="true"></i>会場イメージ</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d1?q=80&w=1200"
-               srcset="https://images.unsplash.com/photo-1545569341-9eb8b30979d1?q=80&w=600 1x, https://images.unsplash.com/photo-1545569341-9eb8b30979d1?q=80&w=1200 2x"
-               alt="江島神社の参道のイメージ" loading="lazy" decoding="async" width="600" height="160"
-               class="w-full h-40 object-cover rounded-xl shadow" />
-          <img src="https://images.unsplash.com/photo-1545569343-8a3b79d9a69a?q=80&w=1200"
-               srcset="https://images.unsplash.com/photo-1545569343-8a3b79d9a69a?q=80&w=600 1x, https://images.unsplash.com/photo-1545569343-8a3b79d9a69a?q=80&w=1200 2x"
-               alt="境内の風景のイメージ" loading="lazy" decoding="async" width="600" height="160"
-               class="w-full h-40 object-cover rounded-xl shadow" />
-          <img src="https://images.unsplash.com/photo-1541542684-4a31f4a1d80b?q=80&w=1200"
-               srcset="https://images.unsplash.com/photo-1541542684-4a31f4a1d80b?q=80&w=600 1x, https://images.unsplash.com/photo-1541542684-4a31f4a1d80b?q=80&w=1200 2x"
-               alt="テーブルセッティングのイメージ" loading="lazy" decoding="async" width="600" height="160"
-               class="w-full h-40 object-cover rounded-xl shadow" />
-          <img src="https://images.unsplash.com/photo-1498656303895-38a6222d42e4?q=80&w=1200"
-               srcset="https://images.unsplash.com/photo-1498656303895-38a6222d42e4?q=80&w=600 1x, https://images.unsplash.com/photo-1498656303895-38a6222d42e4?q=80&w=1200 2x"
-               alt="江ノ島グルメのイメージ" loading="lazy" decoding="async" width="600" height="160"
-               class="w-full h-40 object-cover rounded-xl shadow" />
+<img src="images/torii.jpg" alt="神社" loading="lazy" decoding="async" width="400" height="400" class="rounded-lg">
+<img src="images/sea.jpg" alt="海" loading="lazy" decoding="async" width="400" height="400" class="rounded-lg">
+<img src="images/sand.jpg" alt="食べ物" loading="lazy" decoding="async" width="400" height="400" class="rounded-lg">
+<img src="images/cafe.jpg" alt="海" loading="lazy" decoding="async" width="400" height="400" class="rounded-lg">
         </div>
         <p class="text-center text-sm text-gray-700 mt-3 min14 pretty">※写真はイメージです。当日の天候・混雑状況により変更の可能性があります。</p>
       </div>
@@ -615,7 +611,7 @@
                 <i class="fas fa-chevron-down text-gray-400" aria-hidden="true"></i>
               </div>
             </div>
-            <div class="px-6 pb-6 text-gray-800 min14 pretty">開催3日前まで全額返金。それ以降は準備費のため一部ご負担をお願いします。</div>
+            <div class="px-6 pb-6 text-gray-800 min14 pretty">開催2日前まで全額返金。それ以降は準備費のため一部ご負担をお願いします。</div>
           </div>
 
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
@@ -626,7 +622,7 @@
               </div>
             </div>
             <div class="px-6 pb-6 text-gray-800 min14 pretty">
-              7〜4日前:50% / 3日前〜当日:100%（食材・座席確保のため）。<br />やむを得ない事情はご相談ください。代理参加は事前連絡で可。
+              前日:50% / 当日:100%（食材・座席確保のため）。<br />やむを得ない事情はご相談ください。代理参加は事前連絡で可。
             </div>
           </div>
         </div>
@@ -668,14 +664,14 @@
           <div class="mt-16 pt-8 border-t border-white border-opacity-20">
             <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 min14">
               <div class="pretty">
-                <p>主催：IBJ加盟相談所 Encore</p>
-                <p>〒xxx-xxxx 神奈川県xxx市xxx</p>
+                <p>主催：IBJ加盟相談所 MATCH</p>
+                <p>〒221-0834 神奈川県横浜市神奈川区台町8-14 ベイシティ滝川412</p>
               </div>
               <div class="mt-4 md:mt-0">
                 <div class="flex items-center"><i class="fas fa-heart text-red-400 mr-2" aria-hidden="true"></i><span>IBJ正規加盟店</span></div>
               </div>
             </div>
-            <div class="mt-8 text-center text-xs text-gray-300 min14"><p>&copy; 2025 Encore. All rights reserved.</p></div>
+            <div class="mt-8 text-center text-xs text-gray-300 min14"><p>&copy; 2025 MATCH（IBJ加盟相談所）. All rights reserved.</p></div>
           </div>
         </div>
       </div>
